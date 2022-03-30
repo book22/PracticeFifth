@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 6rem;
+  position: fixed;
+  background-color: #fff;
+}
+
+header h1 {
+  padding-left: 2rem;
+}
+
+header .toggle-btn {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+header .toggle-btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .toggle-btn span:nth-child(1) {
+  top: 4px;
+}
+
+header .toggle-btn span:nth-child(2) {
+  top: 14px;
+}
+
+header .toggle-btn span:nth-child(3) {
+  bottom: 4px;
+}
+
+header .xMark span {
+  background-color: #fff;
+}
+
+header .xMark span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+          transform: translateY(10px) rotate(-315deg);
+}
+
+header .xMark span:nth-child(2) {
+  opacity: 0;
+}
+
+header .xMark span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+          transform: translateY(-10px) rotate(315deg);
+}
+
+header nav {
+  background-color: #000;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -900px;
+  width: 20rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 20;
+}
+
+header nav ul {
+  margin-top: 4rem;
+  margin-right: 1.4rem;
+  margin-left: 1.4rem;
+}
+
+header nav .nav-menu li {
+  height: 4rem;
+  border-bottom: solid 1px #fff;
+  line-height: 4rem;
+}
+
+header nav .nav-sns li {
+  height: 2rem;
+  line-height: 2rem;
+}
+
+header .blackBg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .open {
+  left: 0;
+}
+
+header .maskOn {
+  display: block;
+}
+
+main {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+main video {
+  width: 100%;
+  pointer-events: none;
+}
+
+main section h2 {
+  padding-bottom: 2rem;
+}
+
+main .pickup {
+  width: 100%;
+  padding: 3rem 0 2rem 0;
+}
+
+main .pickup ul {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+main .pickup ul li {
+  padding: 0 1rem;
+  width: 14rem;
+}
+
+main .pickup ul li img {
+  width: 14rem;
+}
+
+main .feature .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+main .feature .wrapper div {
+  padding: 0 2rem;
+}
+
+main .feature .wrapper div img {
+  width: 100%;
+}
+
+main .feature .wrapper div .item-con p {
+  padding-top: 2rem;
+}
+
+main .contact {
+  padding-top: 2rem;
+  background-color: #000;
+}
+
+main .contact h2 {
+  color: #fff;
+}
+
+main .contact .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .contact .contact-wrapper .contact-info p {
+  padding-bottom: 4rem;
+  color: #fff;
+  text-align: left;
+}
+
+main .contact .contact-wrapper form {
+  width: 16rem;
+  text-align: left;
+  color: #fff;
+}
+
+main .contact .contact-wrapper form dd {
+  height: 3rem;
+}
+
+main .contact .contact-wrapper form dd textarea {
+  width: 100%;
+}
+
+main .contact .contact-wrapper form .button input {
+  width: 200px;
+  color: #fff;
+  background-color: #121212;
+  border: solid 1px #fff;
+  padding: 12px 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
